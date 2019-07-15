@@ -5,8 +5,13 @@ class Home extends Component {
 
     render() {
         return(
-            <div>
-                Home page
+            <div className="Home">
+                <div>
+                    <h3>News App with Redux</h3>
+                </div>
+                <div>
+                    <a href="/news">Vnexpress</a>
+                </div>
             </div>
         );
     }
