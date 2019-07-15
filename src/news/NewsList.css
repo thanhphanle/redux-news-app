@@ -1,10 +1,21 @@
 .NewsList {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #DDD;
+    margin: 0;
+}
+
+.NewsListContent {
     max-width: 720px;
     margin: auto;
-    /*
-    background-color: rgba(245, 245, 245, 0.867);
-    */
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     text-align: center;
+    background-color: white;
+}
+
+.NewsListImg {
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
