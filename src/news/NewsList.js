@@ -28,6 +28,7 @@ class NewsList extends Component {
           items: feed.items,
           isLoading: false
         });
+        console.log(feed.items);
       })
       .catch(error => {
         console.log(error);

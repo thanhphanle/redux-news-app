@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import "./NewsItem.css";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 class NewsItem extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     let content = this.props.content;
     this.extractImgLink(content);
@@ -20,20 +16,24 @@ class NewsItem extends Component {
   }
 
   render() {
-    const { title, description, pubDate, link, comment, content } = this.props;
+    const { title, description, pubDate, link, content } = this.props;
 
     return (
       <div className="NewsItem">
         <Container className="NewsItemContainer">
           <Row>
             <Col sm="3">
-              <img className="NewsItemImg" alt="" src={this.extractImgLink(content)} />
+              <img
+                className="NewsItemImg"
+                alt=""
+                src={this.extractImgLink(content)}
+              />
             </Col>
             <Col sm="9">
               <Container>
                 <Row className="NewsItemRow">
                   <Col className="TitleCol">
-                    <a target="_blank" href={link}>
+                    <a target="_blank" rel="noopener noreferrer" href={link}>
                       <span className="NewsItemTitle">{title}</span>
                     </a>
                   </Col>
