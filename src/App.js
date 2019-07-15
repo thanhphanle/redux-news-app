@@ -1,12 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import AppRouter from "./AppRouter";
 
 function App() {
-  return (
-    <div className="App">
-      <p>Redux News App</p>
-    </div>
-  );
+  return <AppRouter />;
 }
 
 export default App;
